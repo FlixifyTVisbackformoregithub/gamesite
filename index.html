@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunfall Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <button id="downloadBtn">Download Webpage</button>
+    </div>
+    
+    <div class="container">
+        <div class="animated-border">
+            <div class="content-box">
+                <h1>Welcome to the Game Zone!</h1>
+                <p>Your ultimate destination for fun and exciting games!</p>
+                <button id="playBtn">Play Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="games-container" class="games-container hidden">
+        <h2>Games</h2>
+        <div id="game-list">
+            <div class="game-item">
+                <img src="https://via.placeholder.com/150" alt="Game One" class="game-image">
+                <a href="#" class="game-link" data-url="https://example.com/game-one">Game One</a>
+            </div>
+            <div class="game-item">
+                <img src="https://via.placeholder.com/150" alt="Game Two" class="game-image">
+                <a href="#" class="game-link" data-url="https://example.com/game-two">Game Two</a>
+            </div>
+            <div class="game-item">
+                <img src="https://via.placeholder.com/150" alt="Game Three" class="game-image">
+                <a href="#" class="game-link" data-url="https://example.com/game-three">Game Three</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Game Details with Iframe -->
+    <div id="game-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <iframe id="game-frame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
